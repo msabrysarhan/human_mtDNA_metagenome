@@ -49,7 +49,7 @@ The workflow generates the following outputs:
 
 ## Notes
 - Modify resource allocations (e.g., memory or threads) in rules as needed based on your system's capabilities. All rules are set to use one thread and 10Gb of RAM.
-- Ensure that external tools like HaploGrep3 and Haplocheck are properly installed and accessible in your PATH.
+- Ensure that all tools properly installed and accessible in your PATH.
 
 
 ## Contact Information
