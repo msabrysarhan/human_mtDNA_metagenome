@@ -1,4 +1,4 @@
-# Workflow README
+# Analysis of human mtDNA in public metagenomes
 
 ## Overview
 This workflow is designed to process and analyze metagenomic assemblies, specifically focusing on human mitochondrial DNA (mtDNA). It includes downloading assemblies, extracting data, performing BLAST searches, generating variant call files (VCFs), and conducting haplogroup classification. The final output provides summary statistics for all processed samples.
