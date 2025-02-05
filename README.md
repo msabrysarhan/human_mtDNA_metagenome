@@ -11,7 +11,7 @@ Before running the workflow, ensure that the following dependencies are installe
 - **Snakemake**: Workflow management system.
 - **BLAST+**: For creating and using BLAST databases.
 - **BWA**: For sequence alignment.
-- **Samtools**: For processing BAM files.
+- **Samtools**: For processing BAM files and quality filtering.
 - **BCFtools**: For variant calling.
 - **HaploGrep3**: For haplogroup classification.
 - **SeqKit**: For generating sequence statistics.
@@ -20,6 +20,10 @@ Before running the workflow, ensure that the following dependencies are installe
 1. **NCBIaccession.txt**: A tab-separated file containing `sampleID` in the format `study__sample`. This file is used to extract study and sample identifiers.
 2. **download_metagenomic_assemblies.sh**: A bash script contains `wget` commands to download the metagenomic assemblies of each study analyzed by Pasolli et al. (2019).
 3. **Reference mtDNA File**: The workflow will download the rCRS reference genome (`rCRS.fasta`) from Phylotree.
+
+## Analysis workflow
+
+![Alt text](assembly_rCRS.svg)
 
 ## Output Files
 The workflow generates the following outputs:
