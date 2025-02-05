@@ -54,6 +54,11 @@ The workflow generates the following outputs:
 ## Notes
 - Modify resource allocations (e.g., memory or threads) in rules as needed based on your system's capabilities. All rules are set to use one thread and 10Gb of RAM.
 - Ensure that all tools properly installed and accessible in your PATH.
+- In the bin directory, there is a script `sra2cov.py`, which works the raw reads of the Sequence Read Archive (SRA) or European Nucleotide Archive (ENA), and performs the following steps: 
+  - Trim adapter and low-quality bases (<20), using fastp.
+  - Mapping high quality reads against the reference human genome, using Bowtie2.
+  - Filtering out reads with mapping quality <25 and creating BAM files using SAMtools.
+  - Calculate the breadth/depth of coverage using the `breadth_depth.py` of `CMSeq` tool. 
 
 
 ## Contact Information
